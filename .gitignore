@@ -1,0 +1,11 @@
+__pycache__/
+.ipynb_checkpoints/
+RealworldData/
+data/
+HighdimLSE/
+run_logs/
+*.pyc
+*.sh
+temp.ipynb
+temp.py
+report.txt
