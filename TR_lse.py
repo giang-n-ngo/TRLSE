@@ -138,7 +138,7 @@ if __name__=="__main__":
         print(f"Run {args.run_idx}")
         metrics, lse_model, _ = exp(args.data_name, args.acq_name, args.run_idx, args.hdlse, args.kernel, args.tr_update_idx)
         # save the GP model
-        model_path = f"{result_root_path}/model_run_{i}.pt"
+        model_path = f"{result_root_path}/model_run_{args.run_idx}.pt"
         torch.save(lse_model.global_gp_init.state_dict(), model_path)
         # if args.save:
         #     save_metrics(metrics, result_root_path, args.note)
